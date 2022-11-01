@@ -24,8 +24,11 @@
 #include <string.h>
 #include <ctype.h>
 
-/*The function was borrowed from stack overflow and removed the passed substring from
-the string then returns the string.*/
+/*The function was borrowed from stack overflow 
+https://stackoverflow.com/questions/47116974/remove-a-substring-from-a-string-in-c#:~:text=There%20is%20no%20predefined%20function,source%20and%20destination%20arrays%20overlap 
+By chqrlie. It takes a string input from the user and removes the substring from
+the string then returns the new string.*/
+
 char *strremove(char *str, const char *sub)
 {
     size_t len = strlen(sub);
